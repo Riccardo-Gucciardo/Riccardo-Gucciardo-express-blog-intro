@@ -6,6 +6,8 @@ app.get("/",(req,res)=>{
     res.send('server del mio blog')
 })
 
+app.use(express.static('public'))
+
 app.get("/bacheca",(req,res)=>{
 
         const menu= [
